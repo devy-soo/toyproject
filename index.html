@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOC</title>
+    <meta name="description" content="lvdc">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- jquery ui  -->
+     <script src="js/jquery-3.5.1.min.js"></script> 
+     <script src="js/jquery-ui.min.js"></script> 
+    
+    <!-- xeicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    
+    <!-- swiper   -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+   
+    <header class="">
+        <div class="status_title">
+            <p>5대</p>가 충전 <p>완료</p>되었습니다.
+            <div class="open_title">차량을 이동해 주세요.</div>
+        </div>
+        <ul class="status_list">
+            <li>
+                <p class="bg_color1">방금전</p>
+                <span>경기70아</span>
+                <b>1688</b>
+            </li>
+            <li>
+                <p class="bg_color2">5분전</p>
+                <span>경기70아</span>
+                <b>1722</b>
+            </li>
+            <li>
+                <p class="bg_color3">10분전</p>
+                <span>경기70아</span>
+                <b>88</b>
+            </li>
+            <li>
+                <p class="bg_color4">15분전</p>
+                <span>경기70아</span>
+                <b>514</b>
+            </li>
+            <li>
+                <p class="bg_color4">30분전</p>
+                <span>경기70아</span>
+                <b>1000</b>
+            </li>
+            <li>
+                <p class="bg_color4">1시간전</p>
+                <span>경기70아</span>
+                <b>2100B</b>
+            </li>
+        </ul>
+        <i class="xi-angle-down" id="header_toggle"></i>
+    </header>
+    
+    
+    
+    <section class="main_contents">
+       
+        <aside class="clear_fix">
+            <h3>
+                현재 <span>5대</span>가 <span>7기</span>의 충전기로 충전 중이고, 오늘 <span>1300kWh</span>를 충전하였습니다.
+            </h3>
+            <div>
+                <div class="sort_menu clear_fix">
+                    <p class="on">충전 시작 순</p>
+                    <p>남은 시간 순</p>
+                    <p>충전기 순</p>
+                    <p>충전량 높은 순</p>
+                </div>
+                <div class="list_style_menu">
+                    <button id="list_type_btn"><i class="xi-bars xi-2x"></i></button>
+                    <button id="card_type_btn" class="on"><i class="xi-apps xi-2x"></i></button>
+                </div>
+            </div>
+        </aside>
+        
+        
+        <ul id="card_type" class="bus_list">
+            <li>
+                <dl>
+                    <dt>
+                        <span>경기70아</span>
+                        <p>88B</p>
+                    </dt>
+                    <dd>
+                       <div>
+                            <strong>10분</strong>
+                            <small>남음</small>
+                       </div>
+                    </dd>
+                    <dd>
+                        <div class="progress_state_top">10분(80%) <i class="xi-caret-down-min"></i></div>
+                        <progress value="32" max="100"> 32% </progress>
+                        <div class="present_per">현재 32%</div>
+                        <div class="progress_state_bottom">20분(100%) <i class="xi-caret-up-min"></i></div>
+                    </dd>
+                </dl>
+                <div>
+                    <p class="bg_color5">51번</p>
+                    <p class="bg_color2">1번 충전기</p>
+                    <p class="bg_color4">완료 10분전</p>
+                </div>
+                <div class="card_overlay">1722<br>충전 80% 10분전</div>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        <span>경기70아</span>
+                        <p>1688</p>
+                    </dt>
+                    <dd>
+                       <div>
+                            <strong>25분</strong>
+                            <small>남음</small>
+                       </div>
+                    </dd>
+                    <dd>
+                        <div class="progress_state_top">10분(80%) <i class="xi-caret-down-min"></i></div>
+                        <progress value="32" max="100"> 32% </progress>
+                        <div class="present_per">현재 32%</div>
+                        <div class="progress_state_bottom">20분(100%) <i class="xi-caret-up-min"></i></div>
+                    </dd>
+                </dl>
+                <div>
+                    <p class="bg_color5">51번</p>
+                    <p class="bg_color2">1번 충전기</p>
+                    <p class="bg_color4">완료 10분전</p>
+                </div>
+                <div class="card_overlay">1722<br>충전 80% 10분전</div>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        <span>경기70아</span>
+                        <p>1722-1</p>
+                    </dt>
+                    <dd>
+                       <div>
+                            <strong>10분</strong>
+                            <small>남음</small>
+                       </div>
+                    </dd>
+                    <dd>
+                        <div class="progress_state_top">10분(80%) <i class="xi-caret-down-min"></i></div>
+                        <progress value="32" max="100"> 32% </progress>
+                        <div class="present_per">현재 32%</div>
+                        <div class="progress_state_bottom">20분(100%) <i class="xi-caret-up-min"></i></div>
+                    </dd>
+                </dl>
+                <div>
+                    <p class="bg_color5">51번</p>
+                    <p class="bg_color2">3번 충전기</p>
+                    <p class="bg_color4">완료 5분전</p>
+                </div>
+                <div class="card_overlay">1722<br>충전 80% 10분전</div>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        <span>경기70아</span>
+                        <p>60</p>
+                    </dt>
+                    <dd>
+                       <div>
+                            <strong>10분</strong>
+                            <small>남음</small>
+                       </div>
+                    </dd>
+                    <dd>
+                        <div class="progress_state_top">10분(80%) <i class="xi-caret-down-min"></i></div>
+                        <progress value="32" max="100"> 32% </progress>
+                        <div class="present_per">현재 32%</div>
+                        <div class="progress_state_bottom">20분(100%) <i class="xi-caret-up-min"></i></div>
+                    </dd>
+                </dl>
+                <div>
+                    <p class="bg_color5">51번</p>
+                    <p class="bg_color2">2번 충전기</p>
+                    <p class="bg_color6">완료 15분전</p>
+                </div>
+                <div class="card_overlay">1722<br>충전 80% 10분전</div>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        <span>경기70아</span>
+                        <p>1722</p>
+                    </dt>
+                    <dd class="color3">
+                       <div>
+                            <strong>완료</strong>
+                       </div>
+                    </dd>
+                    <dd>
+                        <div class="progress_state_top">10분(80%) <i class="xi-caret-down-min"></i></div>
+                        <progress value="32" max="100"> 32% </progress>
+                        <div class="present_per">현재 32%</div>
+                        <div class="progress_state_bottom">20분(100%) <i class="xi-caret-up-min"></i></div>
+                    </dd>
+                </dl>
+                <div>
+                    <p class="bg_color5">51번</p>
+                    <p class="bg_color2">1번 충전기</p>
+                    <p class="bg_color1">충전완료</p>
+                </div>
+                <div class="card_overlay_done">1722<br>충전 완료</div>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        <span>경기70아</span>
+                        <p>1722</p>
+                    </dt>
+                    <dd class="color4">
+                       <div>
+                            <strong>10분</strong>
+                            <small>남음</small>
+                       </div>
+                    </dd>
+                    <dd>
+                        <div class="progress_state_top">10분(80%) <i class="xi-caret-down-min"></i></div>
+                        <progress value="32" max="100"> 32% </progress>
+                        <div class="present_per">현재 32%</div>
+                        <div class="progress_state_bottom">20분(100%) <i class="xi-caret-up-min"></i></div>
+                    </dd>
+                </dl>
+                <div>
+                    <p class="bg_color5">51번</p>
+                    <p class="bg_color2">1번 충전기</p>
+                    <p class="bg_color4">완료 10분전</p>
+                </div>
+                <div class="card_overlay">1722<br>방금 전 충전 완료</div>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        <span>경기70아</span>
+                        <p>1722</p>
+                    </dt>
+                    <dd>
+                       <div>
+                            <strong>10분</strong>
+                            <small>남음</small>
+                       </div>
+                    </dd>
+                    <dd>
+                        <div class="progress_state_top">10분(80%) <i class="xi-caret-down-min"></i></div>
+                        <progress value="32" max="100"> 32% </progress>
+                        <div class="present_per">현재 32%</div>
+                        <div class="progress_state_bottom">20분(100%) <i class="xi-caret-up-min"></i></div>
+                    </dd>
+                </dl>
+                <div>
+                    <p class="bg_color5">51번</p>
+                    <p class="bg_color2">1번 충전기</p>
+                    <p class="bg_color4">완료 10분전</p>
+                </div>
+                <div class="card_overlay">1722<br>방금 전 충전 완료</div>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        <span>경기70아</span>
+                        <p>1722</p>
+                    </dt>
+                    <dd>
+                       <div>
+                            <strong>10분</strong>
+                            <small>남음</small>
+                       </div>
+                    </dd>
+                    <dd>
+                        <div class="progress_state_top">10분(80%) <i class="xi-caret-down-min"></i></div>
+                        <progress value="32" max="100"> 32% </progress>
+                        <div class="present_per">현재 32%</div>
+                        <div class="progress_state_bottom">20분(100%) <i class="xi-caret-up-min"></i></div>
+                    </dd>
+                </dl>
+                <div>
+                    <p class="bg_color5">51번</p>
+                    <p class="bg_color2">1번 충전기</p>
+                    <p class="bg_color4">완료 10분전</p>
+                </div>
+                <div class="card_overlay">1722<br>방금 전 충전 완료</div>
+            </li>
+            <li>
+                <dl>
+                    <dt>
+                        <span>경기70아</span>
+                        <p>1722</p>
+                    </dt>
+                    <dd>
+                       <div>
+                            <strong>10분</strong>
+                            <small>남음</small>
+                       </div>
+                    </dd>
+                    <dd>
+                        <div class="progress_state_top">10분(80%) <i class="xi-caret-down-min"></i></div>
+                        <progress value="32" max="100"> 32% </progress>
+                        <div class="present_per">현재 32%</div>
+                        <div class="progress_state_bottom">20분(100%) <i class="xi-caret-up-min"></i></div>
+                    </dd>
+                </dl>
+                <div>
+                    <p class="bg_color5">51번</p>
+                    <p class="bg_color2">1번 충전기</p>
+                    <p class="bg_color4">완료 10분전</p>
+                </div>
+                <div class="card_overlay">1722<br>방금 전 충전 완료</div>
+            </li>
+        </ul>
+        
+    </section>
+
+   
+   
+   
+    <footer>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="timeline_slide">
+                   <p><b>80</b>%</p>
+                    <ol>
+                        <li>
+                            <aside>1722</aside>
+                            <p>80% 완료</p>
+                        </li>
+                        <li>
+                            <aside>1675</aside>
+                            <p>5분 남음</p>
+                        </li>
+                        <li>
+                            <aside>1675</aside>
+                            <p>10분 남음</p>
+                        </li>
+                        <li>
+                            <p>15분 남음</p>
+                        </li>
+                        <li>
+                            <aside>1675</aside>
+                            <p>20분 남음</p>
+                        </li>
+                        <li>
+                            <aside>1675</aside>
+                            <p>25분 남음</p>
+                        </li>
+                    </ol>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="timeline_slide">
+                   <p><b>100</b>%</p>
+                    <ol>
+                        <li>
+                            <p>충전 완료</p>
+                        </li>
+                        <li>
+                            <aside>1675</aside>
+                            <p>5분 남음</p>
+                        </li>
+                        <li>
+                            <aside>1675</aside>
+                            <p>10분 남음</p>
+                        </li>
+                        <li>
+                            <p>15분 남음</p>
+                        </li>
+                        <li>
+                            <p>20분 남음</p>
+                        </li>
+                        <li>
+                            <p>25분 남음</p>
+                        </li>
+                    </ol>
+              </div>
+            </div>
+            <div class="swiper-slide" data-swiper-autoplay="4000">
+              <div class="timeline_slide">
+                   <p><b>완료</b></p>
+                    <ol>
+                        <li>
+                            <p>방금 전</p>
+                        </li>
+                        <li>
+                            <aside>1675</aside>
+                            <p>5분 전</p>
+                        </li>
+                        <li>
+                            <aside>1675</aside>
+                            <p>10분 전</p>
+                        </li>
+                        <li>
+                            <aside>1772</aside>
+                            <p>15분 전</p>
+                        </li>
+                        <li>
+                            <p>20분 전</p>
+                        </li>
+                        <li>
+                            <p>25분 전</p>
+                        </li>
+                    </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+    </footer>
+    
+    <script src="js/common.js"></script>
+</body>
+
+</html>
